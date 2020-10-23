@@ -9,7 +9,7 @@ describe('CopyFiles L0 Suite', function () {
     after(() => { });
 
     it('copy files from srcdir to destdir', (done: MochaDone) => {
-        this.timeout(2000);
+        this.timeout(5000);
 
         let testPath = path.join(__dirname, 'L0copyAllFiles.js');
         let runner: mocktest.MockTestRunner = new mocktest.MockTestRunner(testPath);
